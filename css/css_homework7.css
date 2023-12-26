@@ -22,7 +22,6 @@ p {
 ul, li {
     display: block;
     padding: 0;
-    /* margin: 0 0 20px 0; */
     font-size: 16px;
     font-weight: 700;
 }
@@ -82,7 +81,7 @@ a, a:hover, a:active {
     color: rgba(255, 255, 255, 1);
     font-family: Lifehack;
     font-size: 27px;
-
+    cursor: pointer;
 }
 
 .main_title{
@@ -112,6 +111,7 @@ a, a:hover, a:active {
 
 .vector {
     margin-top: 173px;
+    cursor: pointer;
 }
 
 /* ----Вторая секция---- */
@@ -142,21 +142,8 @@ a, a:hover, a:active {
     gap: 47px;
     flex-wrap: wrap;
 }
-.smart_wise {
-    font-size: 16px;
-    margin-right: 94px;
-    
-}
 
-.beautiful {
-    
-}
-
-.girsl_love {
-    margin-bottom: 0;
-}
-
-.why_me_list li span {
+.why_me_list_elem span {
     display: block;
     font-size: 30px;
     font-weight: 400;
@@ -169,12 +156,12 @@ a, a:hover, a:active {
     border-radius:50%;
     text-align: center;
     padding: 18px;
-    margin-left: 43.5px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 23px;
 }
 
-.smart_wise:hover::before{
-    content: '1';
+.why_me_list span:hover{
     font-size: 30px;
     font-weight: 400;
     display: block;
@@ -187,79 +174,8 @@ a, a:hover, a:active {
     border-radius:50%;
     text-align: center;
     padding: 18px;
-    margin-left: 43.5px;
-    margin-bottom: 23px;
-}
-
-.beautiful::before {
-    content: '2';
-    font-size: 30px;
-    font-weight: 400;
-    display: block;
-    box-sizing: border-box;
-    width: 75px;
-    height: 75px;
-    background: #fff;
-    color: #FFA200;
-    border: 1px solid #FFA200;
-    border-radius:50%;
-    text-align: center;
-    padding: 18px;
-    margin-left: 55.5px;
-    margin-bottom: 23px;
-}
-
-.beautiful:hover::before{
-    content: '2';
-    font-size: 30px;
-    font-weight: 400;
-    display: block;
-    box-sizing: border-box;
-    width: 75px;
-    height: 75px;
-    background: #FFA200;
-    color: #fff;
-    border: 1px solid #FFA200;
-    border-radius:50%;
-    text-align: center;
-    padding: 18px;
-    margin-left: 55.5px;
-    margin-bottom: 23px;
-}
-
-.girsl_love::before {
-    content: '3';
-    font-size: 30px;
-    font-weight: 400;
-    display: block;
-    box-sizing: border-box;
-    width: 75px;
-    height: 75px;
-    background: #fff;
-    color: #FFA200;
-    border: 1px solid #FFA200;
-    border-radius:50%;
-    text-align: center;
-    padding: 18px;
-    margin-left: 65px;
-    margin-bottom: 23px;
-}
-
-.girsl_love:hover::before{
-    content: '3';
-    font-size: 30px;
-    font-weight: 400;
-    display: block;
-    box-sizing: border-box;
-    width: 75px;
-    height: 75px;
-    background: #FFA200;
-    color: #fff;
-    border: 1px solid #FFA200;
-    border-radius:50%;
-    text-align: center;
-    padding: 18px;
-    margin-left: 65px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 23px;
 }
 
@@ -313,6 +229,14 @@ a, a:hover, a:active {
     margin-left: 130px;
 }
 
+.history_list  li {
+    margin-bottom: 20px;
+}
+
+.history_list  li:last-child {
+    margin-bottom: 0px;
+}
+
 .history_article {
     padding-left: 15px;
     font-size: 22px;
@@ -340,7 +264,7 @@ a, a:hover, a:active {
     align-items: center;
 }
 
-.container_2 {
+.i_think_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,7 +302,7 @@ a, a:hover, a:active {
 
 .footer_content {
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .container {
@@ -387,6 +311,7 @@ a, a:hover, a:active {
 
 .all_rights {
     color:rgba(255, 255, 255, 0.50);
+    
 }
 
 .all_rights:hover {
