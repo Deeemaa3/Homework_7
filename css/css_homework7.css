@@ -85,7 +85,7 @@ a, a:hover, a:active {
 }
 
 .main_title{
-    color: #fff;
+    color: #ffffff;
     font-size: 27px;
     margin-top: 135px;
     width: 578px;
@@ -311,7 +311,6 @@ a, a:hover, a:active {
 
 .all_rights {
     color:rgba(255, 255, 255, 0.50);
-    
 }
 
 .all_rights:hover {
