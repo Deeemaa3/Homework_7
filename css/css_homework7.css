@@ -12,6 +12,12 @@ div, p, form, input, a, span, button {
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1091px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 p {
     margin: 0;
     font-size: 14px;
@@ -22,13 +28,6 @@ p {
 ul, li {
     display: block;
     padding: 0;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-li p {
-    color: #2D63EB;
-    margin-left: 40px;
 }
 
 li span {
@@ -41,7 +40,7 @@ li span {
     max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     padding: 0;
     margin: 0;
     font-weight: 700;
@@ -73,18 +72,13 @@ a, a:hover, a:active {
 }
 
 .header {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+    
 
-.logo_name {
-    color: rgba(255, 255, 255, 1);
-    font-family: Lifehack;
-    font-size: 27px;
-    cursor: pointer;
-}
-
-.main_title{
+.header_title{
     color: #ffffff;
     font-size: 27px;
     margin-top: 135px;
@@ -94,7 +88,7 @@ a, a:hover, a:active {
     text-align: center;
 }
 
-.contact_with_me {
+.header_contact {
     background: transparent;
     color: #ffffff;
     font-weight: 700;
@@ -116,34 +110,36 @@ a, a:hover, a:active {
 
 /* ----Вторая секция---- */
 
-.section_about {
-    margin-top: 139px;
-    margin-bottom: 34px;
+.section_reasons {
+    padding: 139px;
+    padding-bottom: 34px;
 }
 
-.about_myself {
-    align-items: center;
-}
-
-.reasons {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-.why_me {
+.reasons_why_me {
     font-size: 26px;
     line-height: normal;
     margin-bottom: 53px;
     text-align: center;
 }
 
-.why_me_list {
+.reasons_arguments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reasons_list {
     display: flex;
     gap: 47px;
     flex-wrap: wrap;
 }
 
-.why_me_list_elem span {
+.reasons_list_elem {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.reasons_list_elem span {
     display: block;
     font-size: 30px;
     font-weight: 400;
@@ -156,12 +152,12 @@ a, a:hover, a:active {
     border-radius:50%;
     text-align: center;
     padding: 18px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     margin-bottom: 23px;
+    
 }
 
-.why_me_list span:hover{
+.reasons_list_elem span:hover{
     font-size: 30px;
     font-weight: 400;
     display: block;
@@ -174,25 +170,30 @@ a, a:hover, a:active {
     border-radius:50%;
     text-align: center;
     padding: 18px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     margin-bottom: 23px;
 }
+/* ----Третья секция---- */
+
 
 .about_me {
     text-align: center;
 }
 
 .goals_history {
-    margin-top: 222px;
+    padding-top: 222px;
+    padding-bottom: 54px;
 }
 .goals_history_elems{
     justify-content: center;
     margin-top: 141px;
 }
 
-.mission_article {
-    padding-left: 14px;
+.mission {
+    padding-left: 20px;
+}
+
+.mission_title {
     font-size: 22px;
 }
 
@@ -201,25 +202,20 @@ a, a:hover, a:active {
     height: 2px;
     width: 113px;
     margin-top: 13px;
+    margin-left: -20px;
 }
 
-.mission_desc_start{
-    width: 680px;
-    padding: 45px 0 0 14px;
+.mission_article {
+    margin-top: 45px;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
-.mission_desc_finish {
-    width: 670px;
-    padding: 28px 0 50px 14px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.mission_desc_finish span {
+.mission_article a {
     color: #2D63EB;
     text-decoration-line: underline;
     text-underline-offset: 3px ;
@@ -229,30 +225,29 @@ a, a:hover, a:active {
     margin-left: 130px;
 }
 
-.history_list  li {
-    margin-bottom: 20px;
-}
-
-.history_list  li:last-child {
-    margin-bottom: 0px;
-}
-
-.history_article {
-    padding-left: 15px;
-    font-size: 22px;
-}
-.history_underline {
-    background: #2D63EB;
-    height: 2px;
-    width: 115px;
-    margin-top: 13px;
-}
-
 .history_list {
     margin-top: 41px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
-/* ----Третья секция--- */
+.history_list_text {
+    color: #2D63EB;
+    margin-left: 40px;
+}
+
+.history_list_title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.history_list_title ::first-letter {
+    text-transform: uppercase;
+}
+/* ----Четвертая секция--- */
 
 .i_think {
     background: #E6E9F1;
@@ -292,7 +287,7 @@ a, a:hover, a:active {
     border-radius: 27px;
 }
 
-/* ----Четвертая секция--- */
+/* ----Пятая секция--- */
 
 .footer_section {
     background: #06319E;
@@ -303,10 +298,6 @@ a, a:hover, a:active {
 .footer_content {
     align-items: center;
     justify-content: space-between;
-}
-
-.container {
-    margin: 0 426px;
 }
 
 .all_rights {
